@@ -17,7 +17,7 @@
     "bump": "standard-version",
     "pipeline-update": "npm run build && cdk -a pipeline/delivlib.js deploy",
     "pipeline-diff": "npm run build && cdk -a pipeline/delivlib.js diff",
-    "postinstall": "npm run build"
+    "postinstall": "npm i && npm run build"
   },
   "keywords": [
     "aws-cdk",
